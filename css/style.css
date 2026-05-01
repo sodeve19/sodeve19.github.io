@@ -2,15 +2,15 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:       #f8f7f4;
+  --bg:       #fdf6f6;
   --surface:  #ffffff;
-  --accent:   #2a5298;
-  --accent2:  #1a3a6e;
-  --text:     #1a1a2e;
-  --muted:    #6b7280;
-  --border:   #e5e7eb;
+  --accent:   #8b1a2e;
+  --accent2:  #5c0f1e;
+  --text:     #1a0a0d;
+  --muted:    #7a5560;
+  --border:   #e8d4d7;
   --radius:   10px;
-  --shadow:   0 2px 12px rgba(0,0,0,.08);
+  --shadow:   0 2px 12px rgba(92,15,30,.08);
 }
 
 body {
@@ -204,7 +204,7 @@ section { margin-bottom: 3rem; }
 
 .tag {
   display: inline-block;
-  background: #e8edf8;
+  background: #f5dde0;
   color: var(--accent2);
   font-size: .75rem;
   font-family: 'Helvetica Neue', sans-serif;
@@ -272,7 +272,7 @@ section { margin-bottom: 3rem; }
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), #6d9eeb);
+  background: linear-gradient(135deg, var(--accent), #c0392b);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -306,7 +306,7 @@ section { margin-bottom: 3rem; }
 .member-card .member-links a {
   font-size: .78rem;
   font-family: 'Helvetica Neue', sans-serif;
-  background: #e8edf8;
+  background: #f5dde0;
   color: var(--accent2);
   padding: .2rem .55rem;
   border-radius: 10px;
@@ -359,6 +359,49 @@ section { margin-bottom: 3rem; }
   color: var(--muted);
   font-family: 'Helvetica Neue', sans-serif;
 }
+
+/* ── Project cards as links ───────────────────────────────── */
+a.project-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.project-card:hover { text-decoration: none; }
+a.project-card h3 { transition: color .2s; }
+a.project-card:hover h3 { color: var(--accent); }
+
+/* ── Individual project pages ─────────────────────────────── */
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.8rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: .88rem;
+  color: var(--accent);
+}
+
+.back-link:hover { text-decoration: underline; }
+
+.project-page-header {
+  margin-bottom: 2.5rem;
+}
+
+.project-page-header h1 {
+  font-size: 1.9rem;
+  color: var(--accent2);
+  margin-bottom: .75rem;
+  line-height: 1.3;
+}
+
+.project-tags { margin-top: .5rem; }
+
+.project-list {
+  padding-left: 1.3rem;
+  font-size: .97rem;
+}
+
+.project-list li { margin-bottom: .55rem; }
 
 /* ── Footer ───────────────────────────────────────────────── */
 footer {

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name — Academic Website</title>
+  <title>Sorel de Leon Vergara — Academic Website</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
 <nav>
   <div class="nav-inner">
-    <span class="nav-brand">Your Name</span>
+    <span class="nav-brand">Sorel de Leon Vergara</span>
     <ul>
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="team.html">Team</a></li>
@@ -23,33 +23,32 @@
   <!-- ── Hero / Profile ── -->
   <section class="hero">
     <div class="hero-photo">
-      <!--
-        To use your own photo:
-          1. Place your image in the images/ folder (e.g. images/profile.jpg)
-          2. Replace the div below with:
-             <img src="images/profile.jpg" alt="Your Name" />
-      -->
-      <div class="photo-placeholder">👤</div>
+      <img src="images/Profile.jpeg" alt="Sorel de Leon Vergara" />
     </div>
 
     <div class="hero-info">
-      <h1>Your Name</h1>
-      <p class="title">PhD Student / Postdoctoral Researcher / Assistant Professor</p>
-      <p class="affiliation">Department of [Your Department] · [Your University]</p>
+      <h1>Sorel de Leon Vergara</h1>
+      <p class="title">Research Fellow &amp; Doctor of Biomedical Engineering</p>
+      <p class="affiliation">Biomedical Engineering · RMIT University</p>
 
       <p class="bio">
-        I am a researcher at [Your Lab/Institute] working at the intersection of
-        [Field A] and [Field B]. My research focuses on [brief research statement —
-        1–2 sentences]. I am broadly interested in [interest 1], [interest 2], and
-        [interest 3].
+        Biomedical engineer with 4+ years of experience in the development of biomedical devices,
+        with a proven track record of designing and delivering cortical implants for testing
+        <em>in vivo</em> and <em>in vitro</em>. With degrees in biomedical and electronic engineering,
+        I am passionate about the development of devices for the progression of health sciences —
+        believing the future of society lies in the balance between technology and humanity.
+        Currently, I am working with RMIT and Carbon Cybernetics on the development and
+        characterisation of carbon fibre electrodes for cortical recording and seizure prediction.
       </p>
 
       <div class="links">
-        <a href="mailto:your.email@university.edu">✉ Email</a>
-        <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+        <a href="mailto:sorel.de.leon.vergara@rmit.edu.au">✉ RMIT</a>
+        <a href="mailto:sdeleonverga@unimelb.edu.au">✉ UniMelb</a>
+        <a href="mailto:sodeve@me.com">✉ Personal</a>
+        <a href="https://www.linkedin.com/in/sodeve/" target="_blank">LinkedIn</a>
+        <a href="https://www.rmit.edu.au/profiles/d/sorel-de-leon-vergara" target="_blank">RMIT Profile</a>
+        <a href="https://orcid.org/0000-0002-0227-2910" target="_blank">ORCID</a>
         <a href="https://github.com/sodeve19" target="_blank">GitHub</a>
-        <a href="https://twitter.com/" target="_blank">Twitter / X</a>
-        <a href="cv.pdf" target="_blank">CV</a>
       </div>
     </div>
   </section>
@@ -69,47 +68,55 @@
     <h2>Research Projects</h2>
     <div class="projects-grid">
 
-      <div class="project-card">
-        <h3>Project Title One</h3>
-        <p>Short description of this project — what problem it addresses, key methods, or key findings.</p>
+      <a class="project-card" href="projects/carbon-fibres.html">
+        <h3>Carbon Fibres for Brain-Machine Interfaces</h3>
+        <p>Development and characterisation of carbon fibre electrodes for cortical recording and seizure prediction, in collaboration with Carbon Cybernetics and RMIT University.</p>
         <div>
-          <span class="tag">Machine Learning</span>
+          <span class="tag">Neural Engineering</span>
+          <span class="tag">Cortical Implants</span>
+          <span class="tag">Seizure Prediction</span>
+        </div>
+      </a>
+
+      <a class="project-card" href="projects/smart-bra.html">
+        <h3>Smart-Bra: Impedance-Based Breast Cancer Monitoring</h3>
+        <p>A wearable smart bra that uses bioelectrical impedance measurements for continuous, non-invasive monitoring of breast tissue changes associated with cancer progression.</p>
+        <div>
+          <span class="tag">Wearable Devices</span>
+          <span class="tag">Bioimpedance</span>
+          <span class="tag">Oncology</span>
+        </div>
+      </a>
+
+      <a class="project-card" href="projects/enable-i.html">
+        <h3>Enable-i: EMG-Driven Prosthetics Control</h3>
+        <p>Intramuscular EMG recording system enabling high-resolution neural signal acquisition for intuitive and reliable control of upper-limb prosthetic devices.</p>
+        <div>
+          <span class="tag">Prosthetics</span>
+          <span class="tag">EMG</span>
+          <span class="tag">Neuroprosthetics</span>
+        </div>
+      </a>
+
+      <a class="project-card" href="projects/comsol-neurons.html">
+        <h3>Simulating Neurons and Their Interactions with Electrodes in COMSOL</h3>
+        <p>Finite element modelling of neuronal behaviour and electrode–tissue interfaces using COMSOL Multiphysics to inform the design and optimisation of neural recording and stimulation devices.</p>
+        <div>
+          <span class="tag">COMSOL</span>
+          <span class="tag">FEM Simulation</span>
+          <span class="tag">Neural Modelling</span>
+        </div>
+      </a>
+
+      <a class="project-card" href="projects/neuromuscular-junctions.html">
+        <h3>Neuromuscular Junctions <em>In Vitro</em></h3>
+        <p>Studying the formation and electrophysiology of neuromuscular junctions using <em>in vitro</em> models to advance understanding of motor neuron disease and drug screening.</p>
+        <div>
+          <span class="tag">In Vitro</span>
+          <span class="tag">Electrophysiology</span>
           <span class="tag">Neuroscience</span>
         </div>
-        <a class="project-link" href="#">Paper ↗</a>
-        <a class="project-link" href="#" style="margin-left:.8rem;">Code ↗</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Project Title Two</h3>
-        <p>Short description of this project — what problem it addresses, key methods, or key findings.</p>
-        <div>
-          <span class="tag">Computational Biology</span>
-          <span class="tag">Modeling</span>
-        </div>
-        <a class="project-link" href="#">Paper ↗</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Project Title Three</h3>
-        <p>Short description of this project — what problem it addresses, key methods, or key findings.</p>
-        <div>
-          <span class="tag">Data Analysis</span>
-          <span class="tag">Statistics</span>
-        </div>
-        <a class="project-link" href="#">Preprint ↗</a>
-        <a class="project-link" href="#" style="margin-left:.8rem;">Code ↗</a>
-      </div>
-
-      <div class="project-card">
-        <h3>Project Title Four</h3>
-        <p>Short description of this project — what problem it addresses, key methods, or key findings.</p>
-        <div>
-          <span class="tag">Tag A</span>
-          <span class="tag">Tag B</span>
-        </div>
-        <a class="project-link" href="#">Learn more ↗</a>
-      </div>
+      </a>
 
     </div>
   </section>
@@ -117,7 +124,7 @@
 </main>
 
 <footer>
-  <p>&copy; 2026 Your Name · Built with GitHub Pages</p>
+  <p>&copy; 2026 Sorel de Leon Vergara · Built with GitHub Pages</p>
 </footer>
 
 </body>
