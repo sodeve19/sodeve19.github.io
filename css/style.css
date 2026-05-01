@@ -403,6 +403,26 @@ a.project-card:hover h3 { color: var(--accent); }
 
 .project-list li { margin-bottom: .55rem; }
 
+/* ── Publications ─────────────────────────────────────────── */
+.pub-list {
+  padding-left: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+}
+
+.pub-list li {
+  font-size: .93rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.pub-list li a {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: .82rem;
+  word-break: break-all;
+}
+
 /* ── Footer ───────────────────────────────────────────────── */
 footer {
   text-align: center;
