@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulating Neurons and Electrodes in COMSOL — Sorel de Leon Vergara</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../../index.html" class="nav-brand">Sorel de Leon Vergara</a>
+    <ul>
+      <li><a href="../../index.html">Home</a></li>
+      <li>
+        <a href="../../index.html#projects" class="active">Projects</a>
+        <div class="dropdown">
+          <a href="../carbon-fibers/carbon-fibres.html">Carbon Fibres for Brain-Machine Interfaces</a>
+          <a href="../smart-bra/smart-bra.html">Smart-Bra: Impedance-Based Breast Cancer Monitoring</a>
+          <a href="../enable-i/enable-i.html">Enable-i: EMG-Driven Prosthetics Control</a>
+          <a href="comsol-neurons.html">Simulating Neurons and Electrodes in COMSOL</a>
+          <a href="../neuromuscular/neuromuscular-junctions.html">Neuromuscular Junctions In Vitro</a>
+        </div>
+      </li>
+      <li><a href="../../team.html">Team</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <a href="../../index.html#projects" class="back-link">← Back to Projects</a>
+
+  <div class="project-page-header">
+    <h1>Simulating Neurons and Their Interactions with Electrodes in COMSOL</h1>
+    <div class="project-tags">
+      <span class="tag">COMSOL</span>
+      <span class="tag">FEM Simulation</span>
+      <span class="tag">Neural Modelling</span>
+    </div>
+  </div>
+
+  <section>
+    <h2>Overview</h2>
+    <p>
+      Selecting the right electrode geometry for intracortical recording typically requires costly
+      and time-intensive animal experiments. This project develops a computational framework —
+      combining NEURON-based neuron simulations with COMSOL finite element modelling — to predict
+      how electrode size, shape, and placement affect extracellular action potential (EAP) recording
+      quality. The models are among the first to characterise fully 3D cylindrical microwire
+      geometries, which have been largely unexplored compared to planar probes.
+    </p>
+  </section>
+
+  <section>
+    <h2>Model Design</h2>
+    <p>
+      A biologically realistic CA1 pyramidal neuron morphology was simulated in NEURON (Python),
+      with transmembrane currents extracted at each compartment and imported into COMSOL as a
+      series of line-source current segments. The extracellular domain was modelled as a
+      homogeneous grey matter sphere (conductivity 0.627 S/m), with a custom Randles circuit
+      at the electrode boundary to capture electrochemical impedance effects. Three electrode
+      types were compared: a standard single-shank planar probe (50 µm electrodes, 200 µm pitch),
+      a high-density Neuropixels-style probe (6 µm electrodes, 15 µm pitch), and cylindrical
+      platinum microwires (10 µm diameter) with exposed tip lengths of 10, 100, and 500 µm.
+    </p>
+    <figure class="project-figure">
+      <img src="Axon.png" alt="3D COMSOL model — CA1 pyramidal neuron inside a spherical grey matter domain with a microwire electrode." />
+      <figcaption>COMSOL simulation geometry: a morphologically realistic CA1 pyramidal neuron embedded in a spherical grey matter domain, with a cylindrical microwire electrode positioned along the soma-axon axis.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Key Findings</h2>
+    <p>
+      Electrode proximity to the soma is the dominant factor governing signal amplitude. The
+      10 µm exposed microwire at 10 µm from the soma yielded the highest peak-to-peak amplitude
+      of any configuration tested — 160 µV — outperforming both the 50 µm planar electrode
+      (139 µV) and the Neuropixels-style probe (101 µV). This advantage arises because the
+      smaller wire diameter allows closer physical proximity to the neuron soma.
+    </p>
+    <p>
+      Increasing the microwire exposure length progressively attenuated signal amplitude through
+      spatial averaging: a 100 µm exposure yielded 63 µV near the soma, while a 500 µm exposure
+      produced only 14 µV — below the in vivo noise floor. Signals from all electrode types fell
+      below ~15 µV beyond 50 µm from the soma, making reliable spike sorting impractical at greater
+      distances. Model predictions were validated against benchtop saline experiments (Pearson r = 0.96).
+    </p>
+    <figure class="project-figure">
+      <img src="F5_MicroWireSignals.jpg" alt="Simulated EAP waveforms and peak-to-peak amplitude vs distance for 10, 100, and 500 µm microwire electrodes near the soma, axon, and apical tuft." />
+      <figcaption>(a) Simulated extracellular action potential waveforms for 10, 100, and 500 µm microwire electrodes at 10, 25, and 50 µm from the soma, axon, and apical tuft compartments. (b) Peak-to-peak amplitude as a function of distance from each compartment for all three electrode lengths.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Related Publications</h2>
+    <ol class="pub-list">
+      <li>
+        Jaylani R*, McConchie S*, Squires H, Goris T, Jung YJ, Higham S, Tong W, Quigley A, Ibbotson M, Garrett DJ, Prawer S, Cloherty S, Kapsa R, Ahnood A, De Leon SE.
+        Modelling of intracortical microwire electrodes for brain-machine interfaces.
+        <em>Manuscript in preparation</em>.
+        <a href="https://github.com/sodeve19/NEURON_in_COMSOL" target="_blank">github.com/sodeve19/NEURON_in_COMSOL</a>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Collaborators</h2>
+    <p>RMIT University — Biomedical Engineering · The University of Melbourne — School of Physics</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Sorel de Leon Vergara · Built with GitHub Pages</p>
+</footer>
+
+</body>
+</html>

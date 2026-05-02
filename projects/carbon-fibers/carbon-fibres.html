@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carbon Fibres for Brain-Machine Interfaces — Sorel de Leon Vergara</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../../index.html" class="nav-brand">Sorel de Leon Vergara</a>
+    <ul>
+      <li><a href="../../index.html">Home</a></li>
+      <li>
+        <a href="../../index.html#projects" class="active">Projects</a>
+        <div class="dropdown">
+          <a href="carbon-fibres.html">Carbon Fibres for Brain-Machine Interfaces</a>
+          <a href="../smart-bra/smart-bra.html">Smart-Bra: Impedance-Based Breast Cancer Monitoring</a>
+          <a href="../enable-i/enable-i.html">Enable-i: EMG-Driven Prosthetics Control</a>
+          <a href="../comsol-neurons/comsol-neurons.html">Simulating Neurons and Electrodes in COMSOL</a>
+          <a href="../neuromuscular/neuromuscular-junctions.html">Neuromuscular Junctions In Vitro</a>
+        </div>
+      </li>
+      <li><a href="../../team.html">Team</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <a href="../../index.html#projects" class="back-link">← Back to Projects</a>
+
+  <div class="project-page-header">
+    <h1>Carbon Fibres for Brain-Machine Interfaces</h1>
+    <div class="project-tags">
+      <span class="tag">Neural Engineering</span>
+      <span class="tag">Cortical Implants</span>
+      <span class="tag">Seizure Prediction</span>
+    </div>
+  </div>
+
+  <section>
+    <h2>Overview</h2>
+    <p>
+      Conventional intracortical electrodes — silicon shanks and metal microwires — suffer from
+      a chronic foreign-body response that degrades recording quality over time. Glial scarring
+      around stiff probes can exceed 100 µm in thickness, progressively silencing nearby neurons.
+      Carbon fibre microelectrodes, with individual diameters of ~7 µm and mechanical stiffness
+      close to that of brain tissue, minimise this mismatch. This project develops and characterises
+      carbon fibre electrode platforms for cortical recording, neurochemical sensing, and neural
+      stimulation, in collaboration with Carbon Cybernetics and RMIT University.
+    </p>
+  </section>
+
+  <section>
+    <h2>The Carbon Cybernetics Array</h2>
+    <p>
+      The Carbon Cybernetics Array is a miniaturised, hermetically sealed microelectrode array
+      built on a 2.5 mm diamond substrate, with individual carbon fibres brazed via gold
+      active-alloy bonding — replacing the silver paste and PCB substrates used in earlier designs.
+      Diamond's impermeability enables hermeticity validation by helium leak testing (detection
+      limit 10⁻¹¹ mbar L/s), a critical step toward fully implantable wireless devices.
+    </p>
+    <p>
+      Arrays implanted chronically in rat cortex for up to 6 months produced glial scar
+      thicknesses of under 20 µm, compared to over 100 µm for conventional probes.
+      Single-unit recordings have been obtained in both rats and sheep, and the platform
+      has been scaled to 25, 100, and 1024 channels.
+    </p>
+    <figure class="project-figure">
+      <img src="Screenshot 2026-05-03 at 08.17.30.png" alt="Carbon Cybernetics Array — SEM images of carbon fibres bonded to diamond substrate and 3D render of the hermetically sealed device." />
+      <figcaption>SEM images of carbon fibres brazed to the diamond substrate (A, B) and 3D render of the fully hermetically sealed Carbon Cybernetics Array with ASIC and laser-welded hermetic lid (C).</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>MXene-Doped PEDOT Coatings</h2>
+    <p>
+      Bare carbon fibres exhibit high impedance (~493 kΩ at 1 kHz) and limited charge injection
+      capacity, restricting their use for stimulation. To address this, MXene (Ti₃C₂Tₓ) was
+      introduced as a counter-ion dopant during electrochemical PEDOT polymerisation directly
+      onto the fibre surface — a method compatible with microwire geometries where spin-coating
+      and ink-printing are impractical.
+    </p>
+    <p>
+      The resulting PEDOT:PSS:MX composite reduced impedance to 16 kΩ at 1 kHz and increased
+      charge injection capacity from 0.15 to 4.7 mC/cm² — a greater than 30-fold improvement.
+      Coated electrodes evoked calcium responses in retinal ganglion cells <em>ex vivo</em> and
+      recorded single-unit spiking activity in rat visual cortex <em>in vivo</em>, demonstrating
+      dual recording and stimulation capability. Primary cortical neurons and astrocytes confirmed
+      biocompatibility of all coated surfaces.
+    </p>
+    <figure class="project-figure">
+      <img src="Graphical abstract_v1-3 01 Artboard 1.jpg" alt="Graphical abstract — PEDOT:MXene coating on carbon fibre showing biocompatibility, effective stimulation, and in vivo cortical recording." />
+      <figcaption>Graphical abstract: electrodeposition of PEDOT doped with MXene enhances the electrochemical properties of carbon fibres, enabling biocompatible neural interfaces with dual recording and stimulation capability.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Boron-Doped Nanocrystalline Diamond Coatings</h2>
+    <p>
+      For neurochemical sensing applications such as fast-scan cyclic voltammetry (FSCV) dopamine
+      detection, uncoated carbon fibres fail over time due to biofouling and electrode etching
+      under repeated high-voltage cycling. A boron-doped nanocrystalline diamond (B-NCD) coating,
+      grown conformally by microwave plasma-enhanced CVD, adds only ~1 µm to the fibre diameter
+      while providing exceptional electrochemical stability.
+    </p>
+    <p>
+      After 108 hours of simulated FSCV cycling, uncoated fibres were completely destroyed and
+      PEDOT:Nafion-coated fibres showed bulk etching, while B-NCD fibres remained intact with
+      no measurable degradation. Dopamine sensitivity was comparable across electrode types
+      (LOD ~0.04 µM), and stimulation-evoked dopamine release was successfully detected
+      <em>in vivo</em> in rat nucleus accumbens.
+    </p>
+  </section>
+
+  <section>
+    <h2>Related Publications</h2>
+    <ol class="pub-list">
+      <li>
+        De León SE, Jaylani R, Jung YJ, et al. Evaluating MXene-doped PEDOT coating on carbon fiber microelectrodes for dual-functional neural interfacing. <em>Analytica Chimica Acta</em>. 2026;1407:345509.
+        <a href="https://doi.org/10.1016/j.aca.2026.345509" target="_blank">https://doi.org/10.1016/j.aca.2026.345509</a>
+      </li>
+      <li>
+        Higham S, Jung YJ, De León SE, et al. Carbon Cybernetics Array: a miniaturized carbon-based microelectrode array for intracortical recording. <em>bioRxiv</em>. 2026.
+        <a href="https://doi.org/10.64898/2026.01.06.696090" target="_blank">https://doi.org/10.64898/2026.01.06.696090</a>
+      </li>
+      <li>
+        Higham SJ, Rojas Cabrera JM, De León SE, et al. Boron-Doped Nano-Crystalline Coated Carbon Fibers for Phasic Dopamine Sensing. <em>Advanced Healthcare Materials</em>. 2025.
+        <a href="https://doi.org/10.1002/adhm.202503945" target="_blank">https://doi.org/10.1002/adhm.202503945</a>
+      </li>
+      <li>
+        De León SE, Higham S, Jung YJ, Tong W, Garrett DJ. Recent developments in microwire-structured intracortical electrode arrays for brain–machine interfaces. <em>Bioengineering &amp; Translational Medicine</em>. 2024;e10742.
+        <a href="https://doi.org/10.1002/btm2.10742" target="_blank">https://doi.org/10.1002/btm2.10742</a>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Collaborators</h2>
+    <p>Carbon Cybernetics · RMIT University — Biomedical Engineering · The University of Melbourne</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Sorel de Leon Vergara · Built with GitHub Pages</p>
+</footer>
+
+</body>
+</html>

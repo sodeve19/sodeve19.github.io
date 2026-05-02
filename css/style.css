@@ -67,6 +67,41 @@ nav ul a {
 nav ul a:hover,
 nav ul a.active { color: #fff; text-decoration: none; }
 
+/* ── Nav dropdown ─────────────────────────────────────────── */
+nav ul li { position: relative; }
+
+nav ul li .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent2);
+  min-width: 280px;
+  border-radius: 0 0 var(--radius) var(--radius);
+  box-shadow: 0 6px 20px rgba(0,0,0,.25);
+  padding: .4rem 0;
+  z-index: 200;
+}
+
+nav ul li:hover .dropdown { display: block; }
+
+nav ul li .dropdown a {
+  display: block;
+  padding: .55rem 1.2rem;
+  font-size: .85rem;
+  color: rgba(255,255,255,.85);
+  text-transform: none;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+nav ul li .dropdown a:hover {
+  background: rgba(255,255,255,.1);
+  color: #fff;
+  text-decoration: none;
+}
+
 /* ── Page wrapper ─────────────────────────────────────────── */
 main {
   max-width: 960px;
@@ -402,6 +437,30 @@ a.project-card:hover h3 { color: var(--accent); }
 }
 
 .project-list li { margin-bottom: .55rem; }
+
+/* ── Project figures ──────────────────────────────────────── */
+.project-figure {
+  margin: 1.8rem 0;
+  text-align: center;
+}
+
+.project-figure img {
+  max-width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.project-figure figcaption {
+  margin-top: .7rem;
+  font-size: .82rem;
+  color: var(--muted);
+  font-family: 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* ── Publications ─────────────────────────────────────────── */
 .pub-list {
